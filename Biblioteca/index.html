@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi Biblioteca</title>
+    <script type="text/javascript" src="JQuery/jquery-2.1.4.min.js" ></script>
+    <script type="text/javascript" src="JQuery/jquerymobile145/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="JQuery/jquerymobile145/jquery.mobile-1.4.5.min.css" />
+    <script type="text/javascript" src="js/Biblioteca.js"></script>
+</head>
+<body>
+    <div id="Mipagina" data-role="page">
+        <div id="cabecera" data-role="header">
+            <p>Mi Biblioteca</p>
+        </div>
+        <div id="contenido" data-role="content">
+            <br/>
+            <ul data-role="listview">
+                <li><a href="#pag2" data-rel="dialog">Añadir</a></li>
+                <li><a href="">Borrar</a></li>
+                <li id="botonlistar"><a href="listarLibros">Ver Libros</a></li>
+            </ul>
+        </div>
+        <div id="pie" data-role="footer">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="" data-icon="search">Buscar</a></li>
+                    <li><a href="Mipagina" data-icon="home">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>  
+    <div id="pag2" data-role="page">
+            <div id="cabecera" data-role="header">
+               <p style="text-align:center">Introduce un libro</p>
+            </div>
+            <input type="text" id="Titulo" placeholder="Titulo..."/>
+            <input type="text" id="Autor" placeholder="Autor..."/>
+            <input type="text" id="Resumen" placeholder="Resumen..."/>
+            <input type="button" id="botonguardar" value="Añadir"/>
+    </div> 
+</body>
+</html>
